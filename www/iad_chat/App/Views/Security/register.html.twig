@@ -1,0 +1,28 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Register{% endblock %}
+
+{% block body %}
+
+<form action="user/save" method="post">
+    <h2>Create an account</h2>
+
+    <div class="container">
+        <div>
+            <label for="username"><b>Username</b></label>
+            <input type="text" placeholder="Enter username" id="username" name="username" required>
+        </div>
+        <div>
+            <label for="email"><b>Email</b></label>
+            <input type="email" placeholder="Enter email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="password"><b>Password</b></label>
+            <input type="password" placeholder="Enter password" id="password" name="password" required>
+        </div>
+
+        <button type="submit">Sign Up</button>
+    </div>
+</form>
+
+{% endblock %}

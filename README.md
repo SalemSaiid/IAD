@@ -11,15 +11,17 @@ These instructions apply if you installed:
 1. Run in the root folder **docker-compose up -d** to prepare the environment (Apache, PHP7, Mysql, phpMyAdmin, Insert fixtures data).
 1. Run in the 'www/iad_chat' **composer install** to install the project dependencies.
 1. Now that installation is complete, you can test :)
-     - URL: http://localhost:8001/iad_chat/public/index.php/
+     - URL APP: http://localhost:8001/iad_chat/public/index.php/
      - Users Fixture (dump/iad_chat_db.sql): 
            <br> william@email.com / password
            <br> marc@email.com / password
-           <br> john@email.com / password
-            
- If you need to re-install, run these commands:
- -  docker-compose stop   
- -  docker-compose rm   
- -  docker-compose rm   
- -  docker volume prune --force 
- -  docker-compose up --build --force-recreate
+           <br> john@email.com / password <br> <br>
+     - URL phpMyAdmin : http://localhost:8000 
+         <br> user: user 
+         <br> password: test  
+<div> If you need to re-install, run these commands: <br> <br>
+ -  docker-compose stop    <br>
+ -  docker-compose rm    <br>
+ -  docker-compose rm    <br>
+ -  docker volume prune --force  <br>
+ -  docker-compose up --build --force-recreate <br>
