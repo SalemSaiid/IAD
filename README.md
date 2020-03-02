@@ -22,6 +22,5 @@ These instructions apply if you installed:
 <div> If you need to re-install, run these commands: <br> <br>
  -  docker-compose stop    <br>
  -  docker-compose rm    <br>
- -  docker-compose rm    <br>
  -  docker volume prune --force  <br>
  -  docker-compose up --build --force-recreate <br>
